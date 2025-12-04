@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartCity Transporte Urbano</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚌 SmartCity Transporte Urbano</h1>
+  </header>
+
+  <main>
+    <!-- Sección de Usuarios -->
+    <section class="modulo">
+      <h2>👥 Gestión de Usuarios</h2>
+      <form id="usuario-form">
+        <input type="hidden" id="usuario-id" />
+        <input type="text" id="usuario-nombre" placeholder="Nombre *" required />
+        <input type="text" id="usuario-apellido" placeholder="Apellido *" required />
+        <input type="email" id="usuario-email" placeholder="Email *" required />
+        <input type="tel" id="usuario-telefono" placeholder="Teléfono" />
+        <input type="date" id="usuario-fecha" required />
+        <input type="number" id="usuario-saldo" placeholder="Saldo inicial" min="0" step="100" />
+        <select id="usuario-estado">
+          <option value="activo">Activo</option>
+          <option value="inactivo">Inactivo</option>
+          <option value="suspendido">Suspendido</option>
+        </select>
+        <div class="form-buttons">
+          <button type="submit">Guardar Usuario</button>
+          <button type="button" id="btn-cancelar-usuario" style="display: none;">Cancelar</button>
+        </div>
+      </form>
+
+      <div class="lista" id="lista-usuarios">
+        <p>Cargando usuarios...</p>
+      </div>
+    </section>
+
+    <!-- Sección de Rutas -->
+    <section class="modulo">
+      <h2>🛣️ Gestión de Rutas</h2>
+      <form id="ruta-form">
+        <input type="hidden" id="ruta-id" />
+        <input type="text" id="ruta-nombre" placeholder="Nombre de la ruta *" required />
+        <input type="text" id="ruta-origen" placeholder="Origen *" required />
+        <input type="text" id="ruta-destino" placeholder="Destino *" required />
+        <input type="number" id="ruta-distancia" placeholder="Distancia (km) *" step="0.1" min="0" required />
+        <input type="number" id="ruta-tiempo" placeholder="Tiempo estimado (min) *" min="0" required />
+        <input type="number" id="ruta-tarifa" placeholder="Tarifa ($)" min="0" step="100" required />
+        <select id="ruta-estado">
+          <option value="activa">Activa</option>
+          <option value="inactiva">Inactiva</option>
+          <option value="mantenimiento">Mantenimiento</option>
+        </select>
+        <div class="form-buttons">
+          <button type="submit">Guardar Ruta</button>
+          <button type="button" id="btn-cancelar-ruta" style="display: none;">Cancelar</button>
+        </div>
+      </form>
+
+      <div class="lista" id="lista-rutas">
+        <p>Cargando rutas...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
