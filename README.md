@@ -3,8 +3,9 @@
 > **Sistema Inteligente de Gestión del Transporte Urbano**  
 > Optimización en tiempo real de rutas, control de flotas, monitoreo de pasajeros y análisis de movilidad para ciudades modernas.
 
-![SmartCity Banner](https://via.placeholder.com/800x200?text=SmartCity+Transport+-+Movilidad+Inteligente)
-> *Reemplaza esta imagen con una captura real de tu sistema cuando la tengas.*
+![SmartCity Banner](![Imagen de WhatsApp 2025-12-07 a las 07 38 58_483e3236](https://github.com/user-attachments/assets/da2a6963-59a8-4176-92d5-e7f05ece9f02)
+)
+> **
 
 ---
 
@@ -43,13 +44,13 @@ El sistema permite a las autoridades:
 - **Despliegue**: Docker, Nginx, AWS/GCP (opcional)
 - **Análisis**: Pandas, NumPy (para modelado de demanda)
 
-> *Ajusta esta sección según lo que realmente uses en tu proyecto.*
+> *.*
 
 ---
 
 ## 🚀 Instalación Local
 
-1. **Clona el repositorio**
+1. **Se Clono el repositorio**
    ```bash
    git clone https://github.com/ptc3112/smartcity_transport.git
    cd smartcity_transport
